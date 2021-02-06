@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+body
+{
+    background: url(../img/reg.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+option{
+    color: rgb(14, 14, 15);
+
+}
+
+label{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+
+.registration{
+    margin: auto;
+    width: 48%;
+    text-align: center;
+    color: white;
+    background: rgb(0, 0,0,0.5);
+    padding: 15px;
+    border: 2px solid white;
+    margin-top: 43px;
+    border-radius: 7%;
+}
+h2{
+    padding: 5px;
+}
+#name{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    right: 200px;
+}
+::placeholder{
+    color: rgb(245, 238, 238);
+}
+
+#sub{
+    width: 150px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    outline:1px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+}
+#sub:hover{
+    background: rgb(81, 161, 236);
+}
+
+#id{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 76px;
+}
+
+#aid{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left:7px;
+
+}
+#fname{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 52px;
+}
+#birthdate{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 5px;
+}
+#email{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 38px;
+}
+#nationality{
+    width: 31%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 26px;
+}
+#location{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 42px;
+}
+#domain{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 51px;
+}
+#branch{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 58px;
+}
+#gender{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 58px;
+}
+
+#joiningdate{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 0px;
+}
+#password{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 100px;
+}
+#far fa-eye{
+    margin-left: -30px;
+    cursor: pointer;
+}
+#confirmpass{
+    width: 32%;
+    padding: 5px 21px 6px 8px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline: 0ch;
+    font-size: 18;
+    background: none;
+    align-content: center;
+    color: white;
+    margin-left: 33px;
+}
+
+

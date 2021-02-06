@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dola/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dola/font-awesome.min.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'dola/reg.css' %}">
+    <style class="background">
+    {% load static %}
+    body {
+            background-image: url("{% static 'mrityun/5.jpeg' %}");
+            background-repeat: no-repeat;
+            background-size: 10x 8px;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+
+          }
+
+
+.welcome{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 20% 30%;
+  text-align: center;
+  font-family: "Sofia";
+  font-size: 22px;
+}
+.welcome h2{
+  text-align: center;
+  color: rgb(133, 35, 35);
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.welcome a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  font-family: "Sofia";
+  font-size: 22px;
+}
+.welcome a:hover{
+  background: #fff;
+  color: #000;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            {% load static%}
+            <a href="#"><img class="logo" width="180px" height="50px" src="{% static 'mrityun/logo.jpg' %}"></a>
+            <div class="header-right">
+                {% if user.is_authenticated %}
+                <a href="index">Home</a>
+                <a href="reg">Candidate Registration</a>
+                <a href="uploadcsv">Upload File</a>
+                <a href="show">Display</a>
+                <a href="visualization">Visualization</a>
+                <a href="#"><i class="fa fa-fw fa-user"></i>Hello, {{user.username}}</a>
+                <a href="Logout">Log out</a>
+                 <a href="adminreg">Admin Registration</a>
+                {% else %}
+                <a href="/">Log in</a>
+                {% endif %}
+
+            </div>
+        <div class="welcome">
+            <h2>Worldometter Project</h2>
+            <center>
+                {% if messages %}
+                {% for msg in messages %}
+                <code> {{msg}}</code>
+                {% endfor %}
+                {% endif %}
+            </center><br>
+            <a href="#">Contact Us</a>
+            <a href="#">About</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

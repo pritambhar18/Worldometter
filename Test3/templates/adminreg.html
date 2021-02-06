@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dola/admin.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dola/style.css' %}">
+
+
+    <style class="background">
+    {% load static %}
+    body {
+            background-image: url("{% static 'mrityun/reg.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: 10x 8px;
+            height: 200vh;
+            background-size: cover;
+            background-position: center;
+
+          }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+            {% load static%}
+            <a href="#"><img class="logo" width="180px" height="50px" src="{% static 'mrityun/logo.jpg' %}"></a>
+             <div class="header-right">
+                {% if user.is_authenticated %}
+                <a href="index">Home</a>
+                <a href="reg">Candidate Registration</a>
+                <a href="uploadcsv">Upload File</a>
+                <a href="show">Display</a>
+                <a href="visualization">Visualization</a>
+                 <a href="#"><i class="fa fa-fw fa-user"></i>Hello, {{user.username}}</a>
+                <a href="Logout">Log out</a>
+                {% else %}
+                <a href="/">Log in</a>
+                 {% endif %}
+            </div>
+        </div>
+
+   <div class="container">
+    <div class="registration">
+        <h2>Admin Registration </h2><br>
+        <form id="adminreg" method="POST" action="AdminTable">
+            {%csrf_token%}
+             <div class="fromm-group">
+                 {% if messages %}
+                 <ul class="messages">
+                     {% for message in messages %}
+                     <div class="alert alert-danger">{{message}}</div>
+                     {% endfor %}
+                 </ul>
+                 {% endif %}
+             </div>
+            <label>First Name:</label>
+            <input class="first_name" type="text" name="first_name" placeholder="Enter your name" id="first_name" required><br><br>
+
+            <label>Last Name:</label>
+            <input class="last_name" type="text" name="last_name" placeholder="Enter your name" id="last_name" required><br><br>
+
+
+           <label> Username:</label>
+            <input class="username" type="text" name="username" placeholder="Enter your username" id="username" required ><br><br>
+
+            <label>Email_ID:</label>
+            <input class="email" type="email" name="email" placeholder="Enter your mail Id" id="email" required ><br><br>
+
+
+            <label >Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <input type="checkbox" onclick="showpass1()">
+            <label  class="showpass1">Show Password:</label>
+            <br><br>
+            <script>
+            function showpass1() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                  x.type = "password";
+                }
+            }
+         </script>
+
+            <label >Confirm Password:</label>
+            <input type="password" id="confirmpass" name="confirmpass" placeholder="Re-Enter your password" required>
+            <input type="checkbox" onclick="showpass2()">
+            <label  class="showpass2">Show Password:</label>
+            <br><br>
+            <script>
+            function showpass2() {
+                var x = document.getElementById("confirmpass");
+                if (x.type === "confirmpass") {
+                    x.type = "text";
+                } else {
+                  x.type = "confirmpass";
+                }
+            }
+            </script>
+        <button  class="btn btn-primary" type="submit" id="sub">Admin Register</button>
+
+    </form>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+.container{
+  background: url(../img/5.jpeg) no-repeat center fixed;
+  background-position: center cover;
+  
+  background-size: cover;
+  height: 100vh;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  background-color: rgb(79, 142, 194);
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding-top: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.dropbtn {
+    background-color: #f1f1f1;
+    color: rgb(8, 8, 8);
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: rgb(79, 142, 194)}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(79, 142, 194);
+    color: black;;
+  }
+.welcome-text{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 20% 30%;
+  text-align: center;
+  font-family: "Sofia";
+  font-size: 22px;
+}
+.welcome-text h2{
+  text-align: center;
+  color: rgb(133, 35, 35);
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.welcome-text a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  font-family: "Sofia";
+  font-size: 22px;
+}
+.welcome-text a:hover{
+  background: #fff;
+  color: #000;
+}
+img.logo{
+left padding:120px}
+
+/*--------------------------------------------------------login-------------------------------------------------------------------*/
+.login{
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  color: white;
+  background: rgb(0, 0,0,0.5);
+  padding: 15px;
+  border: 2px solid white;
+  margin-top: 181px;
+  border-radius: 10%;
+  padding-bottom: 27px;
+}
+#loginid{
+  width: 55%;
+  padding: 5px 21px 6px 8px;
+  border-radius: 5px;
+  border:1px solid white;
+  outline: 0ch;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18;
+  background: none;
+  align-content: center;
+  color: white;
+  margin-left: 79px;
+}
+#loginpass{
+width: 55%;
+padding: 5px 21px 6px 8px;
+border-radius: 5px;
+border:1px solid white;
+outline: 0ch;
+font-size: 18;
+background: none;
+align-content: center;
+color: white;
+margin-left: 14px;
+font-family: 'Times New Roman', Times, serif;
+}
+#sub{
+  width: 150px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  outline:1px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+#sub:hover{
+  background: rgb(81, 161, 236);
+}
+label{
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  
+}
+::placeholder{
+  color: rgb(245, 238, 238);
+}
+h2{
+  padding: 5px;
+}

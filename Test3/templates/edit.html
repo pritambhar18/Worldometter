@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dola/edit.css' %}">
+
+    <style class="background">
+        {
+            % load static %
+        }
+
+        body {
+            background-image: url("{% static 'mrityun/reg.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: 10x 8px;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="registration">
+        <h2>Update Here</h2><br>
+        <form method="POST" id="register" action="/update/{{employee.id}}">
+            {%csrf_token%}
+            <label>Id:</label>
+            <input type="text" name="id" id="id" placeholder="Enter your  Id" required
+                value="{{ employee.id }}" readonly><br><br>
+            <label>Associate Id:</label>
+            <input type="text" name="aid" id="aid" placeholder="Enter your Associate Id" required
+                value="{{ employee.aid }}"readonly><br><br>
+            <label>Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your Name" required
+                value="{{ employee.fname }}"><br><br>
+            <label>Date of Birth:</label>
+            <input type="text" name="birthdate" id="birthdate" placeholder="Enter your Date Of Birth" required
+                value="{{ employee.birthdate }}" readonly><br><br>
+            <label>Email Id:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Mail_id" required
+                value="{{ employee.email }}" readonly><br><br>
+            <label>Nationality:</label>
+            <input type="text" name="nationality" id="nationality" placeholder="Enter your Nationality" required
+                value="{{ employee.nationality }}"><br><br>
+            <label>Location:</label>
+            <input type="text" name="location" id="location" placeholder="Enter your location" required
+                value="{{ employee.location }}"><br><br>
+
+            <label>Domain:</label>
+            <input type="text" name="domain" id="domain" placeholder="Enter your domain" required
+                value="{{ employee.domain }}"><br><br>
+
+            <label>Branch:</label>
+            <input type="text" name="branch" id="branch" placeholder="Enter your branch" required
+                value="{{ employee.branch }}"><br><br>
+
+            <label>Gender:</label>
+            <input type="text" name="gender" id="gender" placeholder="Enter your Gender" required
+                value="{{ employee.gender }}" readonly><br><br>
+
+            <label>Date Of Joining:</label>
+            <input type="text" name="joiningdate" id="joiningdate" placeholder="Enter your Date Of Joining" required
+                value="{{ employee.joiningdate }}" readonly><br><br>
+
+            <input type="submit" value="Update" id="sub">
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dola/style.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'dola/reg.css' %}">
+
+    <style class="background">
+    {% load static %}
+    body {
+            background-image: url("{% static 'mrityun/5.jpeg' %}");
+            background-repeat: no-repeat;
+            background-size: 10x 8px;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            }
+.login{
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  color: white;
+  background: rgb(0, 0,0,0.5);
+  padding: 15px;
+  border: 2px solid white;
+  margin-top: 181px;
+  border-radius: 10%;
+  padding-bottom: 27px;
+}
+#loginid{
+width: 55%;
+padding: 5px 21px 6px 8px;
+border-radius: 5px;
+border:1px solid white;
+outline: 0ch;
+font-size: 18;
+background: none;
+align-content: center;
+color: white;
+margin-left: 14px;
+font-family: 'Times New Roman', Times, serif;
+}
+#loginpass{
+width: 55%;
+padding: 5px 21px 6px 8px;
+border-radius: 5px;
+border:1px solid white;
+outline: 0ch;
+font-size: 18;
+background: none;
+align-content: center;
+color: white;
+margin-left: 14px;
+font-family: 'Times New Roman', Times, serif;
+}
+#sub{
+  width: 150px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  outline:1px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+#sub:hover{
+  background: rgb(81, 161, 236);
+}
+label{
+  color: white;
+  font-size: 18px;
+  text-align: left;
+
+}
+::placeholder{
+  color: rgb(245, 238, 238);
+}
+h2{
+  padding: 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            {% load static%}
+            <a href="#"><img class="logo" width="180px" height="50px" src="{% static 'mrityun/logo.jpg' %}"></a>
+            <div class="header-right">
+                <a href="/">Home</a>
+                <a href="/">Candidate Registration</a>
+                <a href="/">Upload File</a>
+                <a href="/">Display</a>
+                <a href="/">Visualization</a>
+            </div>
+        </div>
+
+        <div class="login">
+            <h2>Admin Login </h2><br>
+            <center>
+                {% if messages %}
+                {% for msg in messages %}
+                <code> {{msg}}</code>
+                {% endfor %}
+                {% endif %}
+            </center><br>
+            <form method="POST" id="login" action="login">
+                 {% csrf_token %}
+                <label>Admin Username:</label>
+                <input type="text" name="loginid" id="loginid" placeholder="Enter your Admin Username"><br><br>
+                <label>Admin Password:</label>
+                <input type="password" name="loginpass" id="loginpass" placeholder="Enter Your Admin Password"><br><br>
+                <input type="submit" value="Login" id="sub">
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+#File{
+    background-color: rgb(223, 217, 224);
+    color: rgba(17, 17, 17, 0.822);
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    align-content: center;
+}
+#File:hover{
+    background-color: rgba(217, 223, 221, 0.541);
+}
+.upload{
+    align-content: center;
+    padding: 123px 500px 0px 450px;
+}
+.uploadbutton 
+{
+    padding: revert;
+}
+h2{
+    text-align: center;
+    color:white;
+}
