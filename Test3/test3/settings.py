@@ -28,7 +28,7 @@ SECRET_KEY = '&^)cwi-0pvk%s0t-&4#0-c=+2(vrz35eit_%1ae4-_ffp@j$4d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','pcsworldometer.herokuapp.com']
 
 
 # Application definition
